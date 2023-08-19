@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/botones">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:contentDescription="@null"/>
+
+            <EditText
+                android:id="@+id/etPalabra"
+                android:hint="@string/etPalabra"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tvTraduccion"
+                android:text="@string/tvTraduccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+    
+    <LinearLayout
+        android:id="@+id/botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@+id/btTraducir">
+        
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btEspanol"
+            android:text="@string/btEspanol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@null"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_cambiar"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btIngles"
+            android:text="@string/btIngles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@null"/>
+        
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btTraducir"
+        android:text="@string/btTraducir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cornerRadius="10dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

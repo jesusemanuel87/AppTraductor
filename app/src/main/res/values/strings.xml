@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App Traductor TP</string>
+    <string name="etPalabra">Ingrese texto: \n(perro/gato/vaca/caballo/gallina)</string>
+    <string name="tvTraduccion">Traducción</string>
+    <string name="btTraducir">Traducir</string>
+    <string name="btEspanol">Español</string>
+    <string name="btIngles">Inglés</string>
+</resources>
